@@ -56,7 +56,7 @@ sub print_national_days {
     my $formatted_year = 1900 + $year;
     my $formatted_month = ucfirst($months[$mon]);
     my $nice_date_string = "$formatted_month $mday, $formatted_year";
-    print $NATIONAL_DAYS "Todays National Day Report for $nice_date_string \n";
+    print $NATIONAL_DAYS "$nice_date_string \n";
 
     foreach my $day (keys %{$national_day_list}) {
         print $NATIONAL_DAYS "- $day \n";
